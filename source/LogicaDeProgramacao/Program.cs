@@ -16,14 +16,20 @@ namespace LogicaDeProgramacao
             int numero = 10;
 
             int energia = 90;
+            // Concatenando uma string com um inteiro.
+            Console.WriteLine("ENERGIA: " + energia);
+            
             int magia = 40;
+            // Sempre o que é escrito na tela é uma STRING.
+            Console.WriteLine("MAGIA (hp): " + magia);
+
             int soma1 = 100 + 50; // 150
             int soma2 = energia + magia; // 130
 
             // (BOOL)
             // boolean = bool = true ou false
-            bool oPersonagemFoiAtingido = false;
-            bool oPersonagemEstaVivo = true;
+            bool oPersonagemFoiAtingido = false; // 0
+            bool oPersonagemEstaVivo = true; // 1
 
             oPersonagemFoiAtingido = true;
             energia = energia - 1; // 89
@@ -40,7 +46,14 @@ namespace LogicaDeProgramacao
             float somatorio2 = ouro + ouro + ouro;
             float somatorio3 = ouro + (float)ouro2 + (float)ouro3; // CAST (conversão explicita)
 
+            char letra = 'a'; // 97
+            string palavra = "nome do jogo";
 
+            Console.Write("Qual o seu nome? ");
+            string nome = Console.ReadLine(); // LER
+            Console.WriteLine("Oi, " + nome + "!"); // ESCREVER
+
+            Console.ReadKey();
         }
     }
 }
